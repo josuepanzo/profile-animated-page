@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./assets/img/logo.png" alt="" class="logo">
+            <ul id="navToggle">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+            <div class="n">
+                <a href="" class="btn">Log in</a>
+                <a href="" class="btn-App">Download App</a>
+            </div>
+            <img src="./assets/img/menu.png" alt="menu-Icon" class="
+                menuIcon" onclick="showMenu()">
+        </nav>
+        <div class="box-container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h1 class="anim">Make <br/>New Friends.</h1>
+                    <p class="anim">Socially is a new social media platform to make new friends online in the world. Now let's explore all it's amazing features.</p>
+                    <a href="" class="btn-App anim">Join Now</a>
+                </div>
+                <div class="col-sm-2">
+                    <img src="./assets/img/pic.png" class="anim">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        var nav_Toggle = document.getElementById("navToggle");
+
+        nav_Toggle.style.maxHeight = "0px";
+
+        function showMenu() {
+            if (nav_Toggle.style.maxHeight == "0px") {
+                nav_Toggle.style.maxHeight = "200px";
+            } else {
+                nav_Toggle.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
